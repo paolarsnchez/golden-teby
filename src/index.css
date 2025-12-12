@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm earth tones base - mocha/brown palette */
+    --background: 30 20% 8%;
+    --foreground: 35 30% 92%;
+    
+    /* Mocha/warm brown primary */
+    --primary: 25 35% 45%;
+    --primary-foreground: 35 30% 95%;
+    
+    /* Lime accent - 2025 trend */
+    --accent: 78 85% 55%;
+    --accent-foreground: 30 20% 8%;
+    --accent-glow: 78 90% 60%;
+    
+    /* Secondary warm beige */
+    --secondary: 30 25% 18%;
+    --secondary-foreground: 35 30% 90%;
+    
+    /* Muted earth tones */
+    --muted: 30 15% 15%;
+    --muted-foreground: 35 20% 60%;
+    
+    /* Cards with warm overlay */
+    --card: 30 20% 12%;
+    --card-foreground: 35 30% 92%;
+    
+    /* Popover */
+    --popover: 30 20% 10%;
+    --popover-foreground: 35 30% 92%;
+    
+    /* Border */
+    --border: 30 20% 20%;
+    --input: 30 20% 18%;
+    --ring: 78 85% 55%;
+    
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Radius */
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 30 20% 10%;
+    --sidebar-foreground: 35 30% 92%;
+    --sidebar-primary: 78 85% 55%;
+    --sidebar-primary-foreground: 30 20% 8%;
+    --sidebar-accent: 30 25% 18%;
+    --sidebar-accent-foreground: 35 30% 92%;
+    --sidebar-border: 30 20% 20%;
+    --sidebar-ring: 78 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(30 20% 8%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(30 15% 25%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(78 85% 55% / 0.5);
+}
+
+/* Animated blob keyframes */
+@keyframes blob-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(20px, -30px) scale(1.05);
+  }
+  50% {
+    transform: translate(-10px, 20px) scale(0.95);
+  }
+  75% {
+    transform: translate(15px, 10px) scale(1.02);
+  }
+}
+
+@keyframes blob-float-reverse {
+  0%, 100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translate(-25px, 20px) scale(1.08) rotate(5deg);
+  }
+  50% {
+    transform: translate(15px, -15px) scale(0.92) rotate(-3deg);
+  }
+  75% {
+    transform: translate(-10px, -25px) scale(1.04) rotate(2deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+    filter: blur(60px);
+  }
+  50% {
+    opacity: 0.8;
+    filter: blur(80px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer utilities {
+  .animate-blob {
+    animation: blob-float 20s ease-in-out infinite;
+  }
+
+  .animate-blob-reverse {
+    animation: blob-float-reverse 25s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(78 85% 55%) 0%, hsl(78 70% 70%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass effect */
+  .glass {
+    background: hsl(30 20% 12% / 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(30 20% 20% / 0.5);
+  }
+
+  /* Hover card effect */
+  .hover-lift {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px hsl(0 0% 0% / 0.4);
+  }
+}
+
+/* Selection */
+::selection {
+  background: hsl(78 85% 55% / 0.3);
+  color: hsl(35 30% 92%);
+}
