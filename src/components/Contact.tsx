@@ -147,7 +147,7 @@ const Contact = () => {
                 <Textarea
                   id="message"
                   name="message"
-                  placeholder="¿De qué quieres que trate la canción? ¿Tienes alguna referencia? ¿Qué estilo buscas?"
+                  placeholder="¿De qué quieres que trate la canción? Referencias y estilo que buscas."
                   rows={5}
                   required
                   className="bg-card/50 border-border focus:border-accent resize-none"
@@ -186,7 +186,7 @@ const Contact = () => {
                 Contacto directo
               </h3>
               <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                Si prefieres contactar directamente, aquí tienes mis datos. 
+                Si prefieres hablar directamente, aquí tienes mis datos. 
                 Respondo más rápido por WhatsApp.
               </p>
             </div>
@@ -222,7 +222,7 @@ const Contact = () => {
                 ¿Listo para empezar?
               </p>
               <p className="text-sm text-muted-foreground font-body">
-                Envíame tu idea y te propongo algo personalizado en 24-48h. 
+                Envíame tu idea y te propongo algo en 24-48h. 
                 Sin compromiso, sin letra pequeña.
               </p>
             </div>

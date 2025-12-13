@@ -24,22 +24,20 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground font-body leading-relaxed">
                 <p>
-                  Soy Esteban Alferez Navarro, un compositor musical joven, capaz de convertir 
-                  experiencias en canciones que conectan de inmediato. 
-                  Mi escritura destaca por un equilibrio único entre emoción cruda, 
-                  sensibilidad urbana y un toque espiritual que hace que cada letra tenga alma, 
+                  Soy Esteban Alférez Navarro, compositor musical joven especializado en escribir letras que conectan al momento. 
+                  Busco un equilibrio entre emoción cruda, sensibilidad urbana y un punto espiritual para que cada canción tenga alma, 
                   propósito y personalidad.
                 </p>
                 <p>
-                  Me especializo en <span className="text-foreground font-medium">urbano latino</span>: 
-                  reggaetón, trap, R&B, rap, dancehall... Mis letras nacen de vivencias, 
-                  una visión artística que mezcla calle, magia y sentimiento.
+                  Me muevo en <span className="text-foreground font-medium">urbano latino</span>: 
+                  reggaetón, trap, R&B, rap, dancehall... Mis letras nacen de vivencias reales 
+                  y de una visión artística que mezcla calle, magia y sentimiento.
                 </p>
                 <p>
-                  Mi foco está en <span className="text-accent font-medium">letras que cuentan historias reales</span>. 
-                  No solo entrego canciones: entrego visión, emoción y verdad. 
-                  Mi objetivo es ayudar a que cada artista pueda expresar lo que nunca ha dicho, 
-                  sonar como siempre ha querido y elevar su proyecto con letras que dejan huella.
+                  Mi foco está en <span className="text-accent font-medium">letras que cuentan historias </span>. 
+                  No solo entrego canciones: entrego visión, emoción y verdad para que 
+                  cada artista pueda decir lo que nunca ha dicho, sonar como siempre ha querido
+                  y elevar su proyecto con letras que dejan huella.
                 </p>
               </div>
             </div>
