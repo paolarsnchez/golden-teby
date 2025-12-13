@@ -12,19 +12,19 @@ const steps = [
     number: "02",
     icon: Settings2,
     title: "Definimos el servicio",
-    description: "Solo letra, letra con demo, o sesión completa en estudio. Adaptamos todo a lo que necesitas."
+    description: "Solo letra o letra con demo. Elegimos juntos el pack que mejor encaja con tu proyecto y cerramos tiempos de entrega."
   },
   {
     number: "03",
     icon: Sparkles,
     title: "Manos a la obra",
-    description: "Trabajo la letra, preparo el beat, grabo la demo o nos vemos en el estudio. Siempre en contacto contigo."
+    description: "Trabajo la letra, preparo el beat y, si has elegido demo, grabo la referencia con mi voz. Seguimos en contacto durante todo el proceso."
   },
   {
     number: "04",
     icon: Send,
     title: "Entrega final",
-    description: "Recibes tu letra lista, la demo para copiar, o tu canción grabada. Listo para que brilles."
+    description: "Recibes tu letra lista y, si has elegido demo, el audio para copiar flow y melodía. Listo para que brilles en tu grabación."
   }
 ];
 
