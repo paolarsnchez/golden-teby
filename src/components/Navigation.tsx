@@ -42,7 +42,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#hero" className="font-display font-bold text-xl">
-              <span className="gradient-text">NA</span>
+              <span className="gradient-text">GT</span>
             </a>
 
             {/* Desktop navigation */}

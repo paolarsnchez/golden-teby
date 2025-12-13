@@ -78,7 +78,7 @@ const Hero = () => {
             </Button>
             <Button variant="hero" size="xl" asChild>
               <a
-                href="https://wa.me/34600000000"
+                href="https://wa.me/34691590792"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gap-3"
