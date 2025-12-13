@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
+import logo from "../assets/logo.png";
+
 const navLinks = [
   { href: "#servicios", label: "Servicios" },
   { href: "#proceso", label: "Proceso" },
@@ -42,7 +44,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#hero" className="font-display font-bold text-xl">
-              <span className="gradient-text">GT</span>
+              <img src={logo} alt="Golden Teby Logo" className="h-8" />
             </a>
 
             {/* Desktop navigation */}
