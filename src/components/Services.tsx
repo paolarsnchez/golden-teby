@@ -10,7 +10,7 @@ const services = [
     description: "Escritura de letra desde cero a partir de tu idea, tema o referencia. Para artistas que ya tienen su beat o producción.",
     includes: [
       "Letra completa personalizada",
-      "Revisiones incluidas",
+      "Hasta 2 revisiones incluidas",
       "Adaptación a tu estilo",
       "Entrega en 48-72h"
     ]
@@ -19,10 +19,10 @@ const services = [
     icon: Music2,
     title: "Letra + Beat + Demo",
     tagline: "Tu canción, lista para grabar",
-    description: "Escribo la letra, elijo el beat perfecto y grabo una maqueta con mi voz para que copies flow y melodía directamente.",
+    description: "Escribo la letra, elijo el beat perfecto y grabo una maqueta con mi voz para que copies flow y melodía directamente. Solo tienes que entrar al estudio y grabar encima.",
     includes: [
       "Letra original completa",
-      "Selección de beat premium",
+      "Selección de beat premium con licencia básica",
       "Demo grabada con mi voz",
       "Guía de flow y melodía"
     ],
@@ -31,13 +31,14 @@ const services = [
   {
     icon: Music2,
     title: "Letra + Beat",
-    tagline: "Letra y beat",
+    tagline: "Letra y beat a tu medida",
     description: "Escribo la letra y selecciono el beat perfecto. Trabajamos estructura y referencias de flow.",
     includes: [
       "Letra original completa",
       "Selección de beat premium",
       "Guía de estructura y métrica",
-      "Referencias de flow"
+      "Referencias de flow",
+      "Listo para que grabes en tu propio estudio"
     ]
   }
   

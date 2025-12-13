@@ -73,7 +73,7 @@ const Hero = () => {
           >
             <Button variant="heroOutline" size="xl" asChild>
               <a href="#contacto" className="gap-3 text-white border-accent">
-                Comienza tu proyecto musical
+                Pide tu letra
               </a>
             </Button>
             <Button variant="hero" size="xl" asChild>
