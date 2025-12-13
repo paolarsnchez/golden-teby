@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/ritmo-granada-studio-main/" : "/",
+  base: mode === "production" ? "/golden-teby/" : "/",
   server: {
     host: "::",
     port: 8080,
